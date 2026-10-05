@@ -1,0 +1,25 @@
+execution_rules:
+  default_action: "CREATE_DRAFT" # Never auto-send without human supervision in prototype
+  allowed_domains:
+    - "*" # Use list of allowed domains or '*' to accept external inquiries
+  interaction_enabled_services:
+    - "gmail"
+    - "chat"
+  admin_users:
+    - "admin@example.com"
+  trusted_senders:
+    - "admin@example.com"
+  blocked_senders:
+    - "spammer@malicious.com"
+    - "no-reply@"
+    - "mailer-daemon@"
+  blacklisted_keywords:
+    - "password"
+    - "transferencia"
+    - "clave de acceso"
+    - "reset"
+    - "wire transfer"
+    - "ssh key"
+    - "api_key"
+  max_replies_per_hour: 10
+
